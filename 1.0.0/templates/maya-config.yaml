@@ -50,6 +50,7 @@ data:
     maya.docs.url={{ .Values.server.docsUrl }}
     feature.mdape2e.disable=true
     feature.tour.disable=true
+    feature.mayaonpremregistration.disable=true
     feature.chatbot.disable={{ .Values.server.featureChatBotDisable }}
     slack.config.bot.client.id={{ .Values.server.slackConfigBotClientId }}
     slack.config.bot.client.secret={{ .Values.server.slackConfigBotClientSecret }}

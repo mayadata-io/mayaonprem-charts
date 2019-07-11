@@ -24,7 +24,7 @@ server:
   apiAuthGoogleClientSecret:
   clusterDomain: cluster.local
   featureSubscriptionDisable: true
-  subscriptionType:
+  subscriptionType: internal
   featureBillingDisable: true
   billingType: external
   featureEmailDisable: true
