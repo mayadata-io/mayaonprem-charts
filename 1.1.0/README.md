@@ -9,7 +9,7 @@ This chart bootstraps MayaOnprem on a [Kubernetes](http://kubernetes.io) cluster
 
 ## Prerequisites
 - Kubernetes 1.11.0+ with RBAC enabled
-- iSCSI PV support in the underlying infrastructure
+- You should have a storage class. standard storage class is the sc available in GKE by default.
 - Create a secret with docker registry credentials and use it during helm install as parameter for value 'dockersecret'
 
 ## Installing MayaOnprem
@@ -57,17 +57,17 @@ The following table lists the configurable parameters of the MayaOnprem chart an
 | `server.FEATURE_KIALI_DISABLE`                  | TBD                                           |      true                                 |
 | `server.ANALYTICS_GOOGLE_CODE`                  | TBD                                           |      none                                 |
 |                                                 |                                               |                                           |
-| `mysql.storageclass`                            | TBD                                           |      openebs-jiva-default                 |
+| `mysql.storageclass`                            | TBD                                           |      standard
 |                                                 |                                               |                                           |
-| `elasticsearch.storageclass`                    | TBD                                           |      openebs-hostpath                     |
+| `elasticsearch.storageclass`                    | TBD                                           |      standard
 | `elasticsearch.replicas`                        | TBD                                           |      1                                    |
 |                                                 |                                               |                                           |
-| `cassandra.storageclass`                        | TBD                                           |      openebs-hostpath                     |
+| `cassandra.storageclass`                        | TBD                                           |      standard
 | `cassandra.replicas`                            | TBD                                           |      1                                    |
 |                                                 |                                               |                                           |
-| `mayastore.storageclass`                        | TBD                                           |      cstor-storage-class                  |
+| `mayastore.storageclass`                        | TBD                                           |      standard
 |                                                 |                                               |                                           |
-| `grafana.storageclass`                          | TBD                                           |      cstor-storage-class                  |
+| `grafana.storageclass`                          | TBD                                           |      standard
 |                                                 |                                               |                                           |
 | `cortex.replicationfactor`                      | TBD                                           |      1                                    |
 | `cortex.timeout`                                | TBD                                           |      20s                                  |
