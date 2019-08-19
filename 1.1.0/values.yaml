@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 server:
-  release: 1.0.0-ee
+  release: 1.1.0-ee
   dockersecret: mayaonprem-registry-secret
   namespace: default
   PROTOCOL: http
@@ -41,25 +41,30 @@ server:
   ANALYTICS_GOOGLE_CODE:
 
 mysql:
-  storageclass: openebs-jiva-default
+  #storageclass: openebs-jiva-default
+  storageclass: standard
   storagecapacity: 50Gi
 
 elasticsearch:
-  storageclass: openebs-hostpath
+  #storageclass: openebs-hostpath
+  storageclass: standard
   storagecapacity: 50Gi
   replicas: 1
 
 cassandra:
-  storageclass: openebs-hostpath
+  #storageclass: openebs-hostpath
+  storageclass: standard
   storagecapacity: 50Gi
   replicas: 1
 
 mayastore:
-  storageclass: cstor-storage-class
+  #storageclass: cstor-storage-class
+  storageclass: standard
   storagecapacity: 10Gi
 
 grafana:
-  storageclass: cstor-storage-class
+  #storageclass: cstor-storage-class
+  storageclass: standard
   storagecapacity: 50Gi
 
 cortex:
