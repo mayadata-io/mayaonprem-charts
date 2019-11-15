@@ -88,4 +88,4 @@ Once DOP pods are in running state, it can be accessible from browser using Node
 
 > **Tip**: You can use the default [values.yaml](values.yaml)
 
-> **Tip**: Intial login credentails for Administrator. Username: **Administrator** Password: **password**
+> **Tip**: Intial login credentials for Administrator. Username: **Administrator** Password: **password**
