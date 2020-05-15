@@ -13,6 +13,11 @@ This chart bootstraps DirectorOnPrem on a [Kubernetes](http://kubernetes.io) clu
 - Create a secret with docker registry credentials and use it during helm install as parameter for value 'dockerSecret'.
 
 ## Installing DirectorOnPrem
+
+- git clone https://github.com/mayadata-io/director-charts
+- cd director-charts/1.9.0
+- Execute the below command
+
 ```
 helm install --namespace <yournamespace> .
 ```

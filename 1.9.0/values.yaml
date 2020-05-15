@@ -42,7 +42,7 @@ server:
   featureKialiDisable: true
   analyticsGoogleCode:
   ## featureAnalyticsDisable should be set to false in director-charts public repo
-  featureAnalyticsDisable: true
+  featureAnalyticsDisable: false
   autoconnectLocalCluster: true
   # The host URL of the AD server
   adHost:
